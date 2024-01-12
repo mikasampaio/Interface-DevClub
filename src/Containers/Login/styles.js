@@ -8,39 +8,62 @@ export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #c8161d;
 
-  width: 40vw;
   height: 100vh;
 
   img {
-    width: 35vw;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 900px) {
+    img {
+      display: none;
+    }
   }
 `
 
 export const ContainerItens = styled.div`
-  width: 60vw;
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1023px) {
+    form {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
+    form {
+      width: 90%;
+    }
+  }
 `
 export const H1 = styled.h1`
   color: #c8161d;
 `
-export const Form = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-  width: 30vw;
-`
 
 export const P = styled.label`
   color: black;
+  margin-top: 25px;
 `
 export const Input = styled.input`
   outline: none;
-  border: none;
+  border: ${props => (props.error ? '1px solid #ed4137;' : 'transparent')};
   padding-left: 10px;
   border-left: 5px solid #c8161d;
   border-radius: 5px;
@@ -48,24 +71,10 @@ export const Input = styled.input`
   box-shadow: rgba(52, 118, 8, 0.3) 0px 7px 29px 0px;
 `
 
-export const Button = styled.button`
-  width: 30vw;
-  height: 40px;
-  margin-top: 50px;
-
-  border: none;
-  border-radius: 5px;
-
-  background: #c8161d;
-  color: #ffffff;
-  cursor: pointer;
-
-  font-weight: 600;
-  font-size: 15px;
-
-  &:hover {
-    opacity: 0.8;
-  }
+export const ErrorMessage = styled.p`
+  color: #ed4137;
+  font-size: 14px;
+  font-weight: 500;
 `
 
 export const SignIn = styled.p`
