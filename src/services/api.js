@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiDevClub = axios.create({
-  baseURL: 'http://localhost:3001'
+  baseURL: 'https://codeburger-api-production-a066.up.railway.app/'
 })
 
 apiDevClub.interceptors.request.use(async config => {

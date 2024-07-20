@@ -28,6 +28,9 @@ export function Header() {
       <ContainerRoutes>
         <a onClick={() => navigate('/')}>Home</a>
         <a onClick={() => navigate('/produtos')}>Produtos</a>
+        {userData.admin && (
+          <a onClick={() => navigate('/pedidos')}>Painel de Administração</a>
+        )}
       </ContainerRoutes>
 
       <UserMenu>

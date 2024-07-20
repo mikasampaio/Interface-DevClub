@@ -24,7 +24,8 @@ function PrivateRoute({ children }) {
 
   return (
     <>
-      {!admin && <Header />}
+      <Header />
+      {/* {!admin && <Header />} */}
       {children}
     </>
   )
