@@ -1,3 +1,7 @@
+# Descrição
+
+Aplicação desenvolvida com React e oferece uma interface completa para usuários e administradores. Inclui um sistema de autenticação para login e registro. Além disso, a interface do usuário permite a apresentação detalhada dos cardápios disponíveis, possibilitando uma navegação intuitiva. Os usuários podem visualizar e gerenciar suas compras através de uma tela de carrinho antes de finalizar o pedido. Para os administradores, a aplicação oferece um painel onde é possível gerenciar pedidos recebidos, criar novas categorias e adicionar produtos ao cardápio. As tecnologias utilizadas incluem React, Axios para consumir APIs e gerenciar requisições, Styled Componentes para estilização, React Router para gerenciamento de rotas e Context API para gerenciamento de estado da aplicação. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
