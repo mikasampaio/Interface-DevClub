@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { BiLogOut } from 'react-icons/bi'
+import { BiCategory, BiLogOut } from 'react-icons/bi'
 import { BsBoxFill } from 'react-icons/bs'
 import { FaShoppingBag } from 'react-icons/fa'
 import { MdAddBusiness } from 'react-icons/md'
@@ -32,6 +32,12 @@ export function Menu({ pathname }) {
       label: 'Adicionar Produtos',
       link: paths.NewProduct,
       icon: <MdAddBusiness />
+    },
+    {
+      id: 4,
+      label: 'Categorias',
+      link: paths.Category,
+      icon: <BiCategory />
     }
   ]
 

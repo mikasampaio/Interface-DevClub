@@ -59,6 +59,14 @@ function Navigate() {
           }
           path={paths.NewProduct}
         />
+        <Route
+          element={
+            <PrivateRoute>
+              <Admin />
+            </PrivateRoute>
+          }
+          path={paths.Category}
+        />
       </Routes>
     </Router>
   )
